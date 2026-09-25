@@ -3,186 +3,239 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MIMOS Collections | Elegant Children's Fashion, Made in the USA</title>
-<meta name="description" content="MIMOS Collections — elegant, European-inspired children's clothing for girls, boys and baby, plus custom confección pieces. US shipping nationwide.">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Maximum Pest Control | Residential &amp; Commercial Pest Solutions</title>
+<meta name="description" content="Maximum Pest Control delivers thorough, reliable pest management for homes and businesses — general pest control, termites, rodents, mosquitoes and more.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="topbar">Free US shipping on orders over $75 &nbsp;·&nbsp; <strong>New Fall Collection now available</strong></div>
-
 <header class="site-header">
-  <div class="wrap nav">
-    <a href="index.html" class="logo">MIMOS<span>Collections</span></a>
-    <nav class="nav-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="shop.html">Shop All</a>
-      <a href="shop.html?cat=girls">Girls</a>
-      <a href="shop.html?cat=boys">Boys</a>
-      <a href="shop.html?cat=baby">Baby</a>
-      <a href="shop.html?cat=custom">Custom</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <div class="container nav" id="nav">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="32" cy="32" r="30" fill="#0b5d3b"/>
+        <path d="M32 12c-2 6-9 8-9 16 0 5 4 9 9 9s9-4 9-9c0-8-7-10-9-16z" fill="#ffffff"/>
+        <circle cx="32" cy="38" r="4" fill="#0b5d3b"/>
+      </svg>
+      <span>Maximum Pest Control<small>Protect. Prevent. Perform.</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
     <div class="nav-actions">
-      <a href="cart.html" class="icon-btn" aria-label="Cart">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
-        <span class="cart-count">0</span>
+      <a href="https://www.instagram.com/mpestcontrolrd?stkn=cXJtZmRmbjVoOTF4&utm_source=qr" target="_blank" rel="noopener" aria-label="Maximum Pest Control on Instagram">
+        <svg class="icon-instagram" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2.5" y="2.5" width="19" height="19" rx="5" stroke="currentColor" stroke-width="1.8"/>
+          <circle cx="12" cy="12" r="4.3" stroke="currentColor" stroke-width="1.8"/>
+          <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/>
+        </svg>
       </a>
-      <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+      <a href="contact.html" class="btn btn-dark">Get a Free Quote</a>
     </div>
   </div>
 </header>
 
-<section class="hero">
-  <div class="wrap">
-    <div class="hero-copy">
-      <span class="eyebrow">MIMOS Collections · US Exclusive</span>
-      <h1>Timeless style for <em>little</em> ones, stitched with love.</h1>
-      <p class="lead">European-inspired children's fashion for girls, boys and baby — plus fully custom confección pieces, hand-fitted for your family's most special moments.</p>
-      <div class="hero-cta">
-        <a href="shop.html" class="btn btn-primary">Shop New Arrivals</a>
-        <a href="shop.html?cat=custom" class="btn btn-outline">Custom Confección</a>
-      </div>
-      <div class="hero-badges">
-        <div><b>15K+</b>&nbsp;Instagram Family</div>
-        <div><b>Free</b>&nbsp;US Shipping $75+</div>
-        <div><b>Made</b>&nbsp;to Order Available</div>
-      </div>
-    </div>
-    <div class="hero-art" id="hero-art"></div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Shop by Collection</span>
-      <h2>Find their perfect fit</h2>
-      <p class="lead">From everyday play to once-in-a-lifetime portraits.</p>
-    </div>
-    <div class="cat-grid" id="cat-grid"></div>
-  </div>
-</section>
-
-<section style="background:var(--white);">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Handpicked for You</span>
-      <h2>Bestsellers &amp; New Arrivals</h2>
-    </div>
-    <div class="product-grid" id="featured-grid"></div>
-    <div class="text-center" style="margin-top:40px;">
-      <a href="shop.html" class="btn btn-outline">View Full Collection</a>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap story">
-    <div class="story-art" id="story-art"></div>
-    <div>
-      <span class="eyebrow">Our Story</span>
-      <h2>Rooted in tradition, tailored for today</h2>
-      <p class="lead" style="margin-bottom:20px;">MIMOS began as a family atelier crafting heirloom-quality children's clothing. Today, MIMOS Collections brings that same European-inspired craftsmanship to families across the United States — from everyday essentials to fully custom confección for life's biggest milestones.</p>
-      <ul class="checks">
-        <li>Thoughtfully designed girls', boys' &amp; baby collections</li>
-        <li>Made-to-order custom confección for special occasions</li>
-        <li>Premium natural fabrics, finished by hand</li>
-        <li>Nationwide US shipping &amp; easy 30-day returns</li>
-      </ul>
-      <a href="about.html" class="btn btn-outline" style="margin-top:10px;">Read Our Story</a>
-    </div>
-  </div>
-</section>
-
-<section class="insta-section">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow" style="color:var(--gold);">@mimos_rd</span>
-      <h2>Follow Our Journey</h2>
-      <p class="lead">Real MIMOS moments from our community — tag us to be featured.</p>
-    </div>
-    <div class="insta-grid" id="insta-grid"></div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="newsletter">
-      <span class="eyebrow" style="color:var(--gold-deep);">Join the Family</span>
-      <h2>Get 15% off your first order</h2>
-      <p class="lead" style="color:var(--charcoal-soft);">New arrivals, styling tips and exclusive custom confección offers — straight to your inbox.</p>
-      <form class="newsletter-form">
-        <input type="email" placeholder="Enter your email" required>
-        <button class="btn btn-primary" type="submit">Subscribe</button>
-      </form>
-    </div>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-grid">
+<main>
+  <section class="hero">
+    <div class="container">
       <div>
-        <a href="index.html" class="logo">MIMOS<span>Collections</span></a>
-        <p>Elegant children's fashion inspired by European craftsmanship, with custom confección made just for your little one. Proudly serving families across the United States.</p>
-        <div class="footer-social">
-          <a href="https://www.instagram.com/mimos_rd" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
-          <a href="#" aria-label="Facebook">FB</a>
-          <a href="#" aria-label="Pinterest">PN</a>
+        <span class="eyebrow">Licensed &amp; Reliable Pest Control</span>
+        <h1>Pest-free spaces, guaranteed peace of mind.</h1>
+        <p class="lead">Maximum Pest Control protects homes and businesses with thorough inspections, targeted treatments and dependable follow-up — so pests stay out for good.</p>
+        <div class="btn-row">
+          <a href="contact.html" class="btn btn-primary">Request a Free Quote</a>
+          <a href="https://www.instagram.com/mpestcontrolrd?stkn=cXJtZmRmbjVoOTF4&utm_source=qr" target="_blank" rel="noopener" class="btn btn-outline">Follow on Instagram</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>100%</strong><span>Inspection-first approach</span></div>
+          <div><strong>Res + Com</strong><span>Residential &amp; commercial</span></div>
+          <div><strong>Safe</strong><span>Family &amp; pet-conscious methods</span></div>
         </div>
       </div>
+      <div class="hero-art">
+        <div class="hero-badge">
+          <svg viewBox="0 0 200 200" width="260" height="260" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="90" fill="rgba(255,255,255,0.08)"/>
+            <circle cx="100" cy="100" r="64" stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-dasharray="6 8"/>
+            <path d="M100 55c-6 18-28 24-28 50 0 15 12 27 28 27s28-12 28-27c0-26-22-32-28-50z" fill="#f2a71b"/>
+            <circle cx="100" cy="118" r="9" fill="#0b3d26"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What We Treat</span>
+        <h2>Comprehensive protection against common pests</h2>
+        <p>From everyday nuisances to serious infestations, our technicians handle it with tailored treatment plans for your property.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="icon-tile">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l7 3v5c0 5-3.4 8.7-7 10-3.6-1.3-7-5-7-10V6l7-3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>General Pest Control</h3>
+          <p>Ants, spiders, silverfish and other household invaders — routine treatments that keep your space consistently protected.</p>
+        </div>
+        <div class="card">
+          <div class="icon-tile">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 20h16M6 20V9l6-5 6 5v11M10 20v-6h4v6" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Termite Control</h3>
+          <p>Early detection and treatment to stop structural damage before it starts, with ongoing monitoring for peace of mind.</p>
+        </div>
+        <div class="card">
+          <div class="icon-tile">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="12" cy="13" rx="4.5" ry="6" stroke="currentColor" stroke-width="1.8"/><path d="M12 7V3m-3 2l-2-2m8 2l2-2M7 12H3m18 0h-4M7.5 17l-2.5 3m11.5-3l2.5 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Rodent Control</h3>
+          <p>Exclusion, trapping and sanitation strategies that remove rats and mice and help keep them from coming back.</p>
+        </div>
+        <div class="card">
+          <div class="icon-tile">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4c2 3 2 5 0 8-2-3-2-5 0-8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="15" r="4.2" stroke="currentColor" stroke-width="1.8"/><path d="M9 18l-2 2m10-2l2 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Mosquito Reduction</h3>
+          <p>Breeding-site treatment and perimeter barriers that cut mosquito populations so you can enjoy your yard again.</p>
+        </div>
+        <div class="card">
+          <div class="icon-tile">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="12" cy="12" rx="7" ry="4.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 12H2m20 0h-3M8 8l-2-2m10 2l2-2M8 16l-2 2m10-2l2 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Cockroach Elimination</h3>
+          <p>Gel baiting, crack-and-crevice treatment and sanitation guidance to clear infestations at the source.</p>
+        </div>
+        <div class="card">
+          <div class="icon-tile">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 21h18M5 21V10l7-6 7 6v11" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke="currentColor" stroke-width="1.8"/></svg>
+          </div>
+          <h3>Commercial Programs</h3>
+          <p>Scheduled service plans for restaurants, offices and warehouses that keep facilities compliant and pest-free.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-soft">
+    <div class="container split">
       <div>
-        <h4>Shop</h4>
-        <ul>
-          <li><a href="shop.html?cat=girls">Girls</a></li>
-          <li><a href="shop.html?cat=boys">Boys</a></li>
-          <li><a href="shop.html?cat=baby">Baby</a></li>
-          <li><a href="shop.html?cat=custom">Custom Confección</a></li>
+        <span class="eyebrow">Why Choose Us</span>
+        <h2>Treatment plans built around your property, not a one-size-fits-all spray.</h2>
+        <p>Every job starts with a real inspection. We identify the pest, the entry points and the conditions that invite them back — then build a plan that actually solves the problem.</p>
+        <ul class="feature-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.8"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Thorough, no-guesswork inspections before every treatment</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.8"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Family- and pet-conscious products and application methods</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.8"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Clear explanations of what we found and what we did</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.8"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Follow-up support so recurring issues actually go away</span>
+          </li>
+        </ul>
+        <div class="btn-row" style="margin-top: 24px;">
+          <a href="services.html" class="btn btn-dark">Explore Services</a>
+        </div>
+      </div>
+      <div class="panel">
+        <span class="eyebrow" style="background: rgba(255,255,255,.14); color:#fff;">Our Process</span>
+        <h3>Simple, transparent, effective.</h3>
+        <div class="grid" style="gap: 18px; margin-top: 20px;">
+          <div><strong style="color:#f2a71b;">1. Inspect</strong> — We assess the property and identify the pest and its source.</div>
+          <div><strong style="color:#f2a71b;">2. Treat</strong> — A targeted plan is applied using safe, effective methods.</div>
+          <div><strong style="color:#f2a71b;">3. Prevent</strong> — We seal entry points and recommend habits that keep pests out.</div>
+          <div><strong style="color:#f2a71b;">4. Follow up</strong> — Scheduled check-ins to make sure the problem stays solved.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="social-card">
+        <div class="icon-tile" style="background:var(--green-700); color:#fff;">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2.5" y="2.5" width="19" height="19" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.3" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg>
+        </div>
+        <div>
+          <h3 style="margin-bottom:4px;">See our work and get in touch on Instagram</h3>
+          <p style="margin-bottom:0;">Follow <a class="handle" href="https://www.instagram.com/mpestcontrolrd?stkn=cXJtZmRmbjVoOTF4&utm_source=qr" target="_blank" rel="noopener">@mpestcontrolrd</a> for service updates, tips and to send us a direct message.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta">
+        <div>
+          <h2>Ready to take back your space?</h2>
+          <p>Reach out today and get a treatment plan built for your property.</p>
+        </div>
+        <div class="btn-row">
+          <a href="contact.html" class="btn btn-dark">Request a Free Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg width="34" height="34" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="30" fill="#f2a71b"/>
+            <path d="M32 12c-2 6-9 8-9 16 0 5 4 9 9 9s9-4 9-9c0-8-7-10-9-16z" fill="#0b3d26"/>
+          </svg>
+          <strong>Maximum Pest Control</strong>
+        </div>
+        <p>Dependable pest management for homes and businesses — inspection-first, treatment-focused, follow-up guaranteed.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h4>Support</h4>
-        <ul>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="about.html">Our Story</a></li>
-          <li><a href="contact.html">Shipping &amp; Returns</a></li>
-          <li><a href="contact.html">Size Guide</a></li>
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="https://www.instagram.com/mpestcontrolrd?stkn=cXJtZmRmbjVoOTF4&utm_source=qr" target="_blank" rel="noopener">Instagram — @mpestcontrolrd</a></li>
+          <li><a href="contact.html">Request a Quote</a></li>
         </ul>
-      </div>
-      <div>
-        <h4>Stay In Touch</h4>
-        <p>Sign up for 15% off your first order and early access to new collections.</p>
-        <form class="newsletter-form" style="margin-top:14px;max-width:none;">
-          <input type="email" placeholder="Your email" required>
-          <button class="btn btn-primary btn-sm" type="submit">Join</button>
-        </form>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 MIMOS Collections · mimoscollections.com · Based in the USA</span>
-      <div class="pay-icons">💳 🅿️ 🍎</div>
+      <span>&copy; <span id="year"></span> Maximum Pest Control. All rights reserved.</span>
+      <a class="footer-social" href="https://www.instagram.com/mpestcontrolrd?stkn=cXJtZmRmbjVoOTF4&utm_source=qr" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2.5" y="2.5" width="19" height="19" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.3" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg>
+        @mpestcontrolrd
+      </a>
     </div>
   </div>
 </footer>
-<div class="toast"></div>
 
-<script src="js/art.js"></script>
-<script src="js/products.js"></script>
-<script src="js/cart.js"></script>
-<script src="js/render.js"></script>
 <script src="js/main.js"></script>
-<script>
-  document.getElementById('hero-art').innerHTML = mimosArt(11, 'girls');
-  document.getElementById('story-art').innerHTML = mimosArt(6, 'custom');
-  document.getElementById('cat-grid').innerHTML = ['girls','boys','baby','custom'].map((c,i)=>mimosCategoryCardHTML(c,i+2)).join('');
-  const featured = MIMOS_PRODUCTS.filter(p => p.badge).slice(0,8);
-  mimosRenderGrid('featured-grid', featured.length ? featured : MIMOS_PRODUCTS.slice(0,8));
-  document.getElementById('insta-grid').innerHTML = Array.from({length:12},(_,i)=>mimosInstaTileHTML(i)).join('');
-</script>
 </body>
 </html>
